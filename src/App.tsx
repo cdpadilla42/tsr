@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Head from "./components/Head";
 import Button from "./components/button";
+import Input from "./components/input";
 
 function App() {
   return (
@@ -15,9 +16,8 @@ function App() {
             console.log(e.target);
           }}
         >
-          Hello World
+          <img src={logo} className="App-logo" alt="logo" />
         </Button>
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -29,6 +29,7 @@ function App() {
         >
           Learn React
         </a>
+        <Input />
       </header>
     </div>
   );

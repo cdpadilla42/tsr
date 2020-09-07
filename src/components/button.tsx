@@ -8,7 +8,7 @@ type Props = {
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
-const Button = ({ onClick, children }: Props) => {
+const Button: React.FC<Props> = ({ onClick, children }) => {
   return <button onClick={onClick}>{children}</button>;
 };
 
